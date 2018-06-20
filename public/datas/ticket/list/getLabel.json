@@ -1,0 +1,46 @@
+{
+  "data": [
+   {
+     "id":"1",
+     "name":"标签分类1",
+     "list":[
+       {
+         "id":"11",
+         "name":"A标签",
+         "partnerId":"1"
+       },
+       {
+         "id":"12",
+         "name":"B标签",
+         "partnerId":"1"
+       },
+       {
+         "id":"13",
+         "name":"C标签",
+         "partnerId":"1"
+       }]		
+   },
+   {
+     "id":"2",
+     "name":"标签分类2",
+     "list":[
+       {
+         "id":"21",
+         "name":"A2标签",
+         "partnerId":"2"
+       },
+       {
+         "id":"22",
+         "name":"B2标签",
+         "partnerId":"2"
+       },
+       {
+         "id":"23",
+         "name":"C2标签",
+         "partnerId":"2"
+       }]	
+   }
+  ],
+  "status": 200
+ }
+ 

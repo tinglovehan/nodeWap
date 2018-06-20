@@ -1,0 +1,7 @@
+{
+	"msg":"数据获取成功",
+	"flag":"success",
+	"datas":{
+		"form":"<body  onload='document.payForm.submit()'><form action='/thirdPlat' name='payForm' method='get'><input type='hidden' name='orderId' value='144'></form></body>"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"msg":"数据获取成功",
+	"flag":"success",
+	"datas":{
+		"getScore":200,
+		"maxNum":350,
+		"minNum":220,
+		"total":3500,
+		"id":1,
+		"useRule":"退款后积分不返回！"
+	}
+}

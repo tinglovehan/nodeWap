@@ -1,0 +1,28 @@
+{
+  "msg":"数据获取成功！",
+  "flag":"success",
+  "datas":[
+    {
+      "title":"语种",
+      "mark":"language",
+      "datas":[
+        {
+          "id":"",
+          "title":"全部"
+        },
+        {
+          "id":129,
+          "title":"英语"
+        },
+        {
+          "id":130,
+          "title":"法语"
+        },
+        {
+          "id":131,
+          "title":"韩语"
+        }
+      ]
+    }
+  ]
+}

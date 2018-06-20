@@ -1,0 +1,15 @@
+{
+	"msg":"订单生成成功",
+	"flag":"success",
+	"datas":{
+		"userImg":"http://dmqticket.sendinfo.com.cnhttp://odl5az86x.bkt.clouddn.com/505bd116cad0f.jpg",
+		"userName":"13758297493",
+		"userId":1,
+		"idType":0,
+		"idNo":"421083198501112234",
+		"realName":"李大胖",
+		"email":"ldp@sendinfo.com.cn",
+		"grade":"三星级",
+		"userTel":"13758297493"
+	}
+}

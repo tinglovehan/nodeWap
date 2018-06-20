@@ -1,0 +1,20 @@
+{
+	"msg":"数据获取成功",
+	"flag":"success",
+	"datas":{
+		"name":"杭州美食测试名称",
+		"orderNo":"2016092501254789",
+		"amount":300,
+		"orderId":20,
+		"num":3,
+		"price":100,
+		"discount":"",
+		"getScore":200,
+		"consumeScore":150,
+		"scoreId":2,
+		"linkName":"李大胖餐饮",
+		"linkTel":"13745989542",
+		"linkIdcard":"421083198607142546",
+		"outTime":"30"
+	}
+}

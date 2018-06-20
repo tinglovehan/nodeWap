@@ -1,0 +1,15 @@
+{
+	"msg":"数据获取成功",
+	"flag":"success",
+	"datas":{
+		"name":"杭州美食测试名称",
+		"id":5021,
+		"orderNotice":"预定须知预定须知预定须知预定须知预定须知预定须知预定须知",
+		"price":0.01,
+		"stock":10,
+		"salesPrice":0.1,
+		"maxNum":6,
+		"minNum":1,
+		"activityRule":0
+	}
+}

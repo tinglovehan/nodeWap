@@ -1,0 +1,18 @@
+{
+	"msg":"数据获取成功",
+	"flag":"success",
+	"datas":[
+		{
+		"name":"这里是产品名称",
+		"num":17,
+		"remark":"快点快点抓住他",
+		"module":"ticket"
+		},
+		{
+			"name":"这里是产品名称",
+			"num":17,
+			"remark":"快点快点抓住他",
+			"module":"hotel"
+		}
+	]
+}
