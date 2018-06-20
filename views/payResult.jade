@@ -1,0 +1,37 @@
+extends layout
+
+block stylesheets
+  link(rel="stylesheet", href="/stylesheets/order.css")
+block javascripts
+block content
+  if data[0].flag==='error'||data[0].data.payStatus!="3"
+    .pay-results
+      img.font-icon(src='/images/member/fail.png', alt='')
+      p 支付失败
+  else
+    .pay-results
+      img.font-icon(src='/images/member/success.png', alt='')
+      p 支付成功
+    .results-info
+      p #{data[0].data.orderInfo}*#{data[0].data.amount}
+      p
+        if data[0].data.message
+          |#{data[0].data.message}
+        else
+          | 已成功提交，请查收您的
+          em.c-base 短信
+          | ！
+  .btn-bottom
+    -var rePage=data[0].data.orderType
+    case rePage
+      when 'amuse'
+        -rePage='amusement'
+    .btn-handle
+      a.btn(href='/member/order/'+data[0].data.orderNo)
+       | 查看订单
+    if backDetailUrl    
+      .btn-handle
+        //a.btn-RP(href='/list/'+rePage) 继续购买
+        a.btn-RP(href=backDetailUrl) 继续购买
+
+

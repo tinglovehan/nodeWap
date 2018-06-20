@@ -1,0 +1,53 @@
+extends ../../layout
+
+block stylesheets
+  link(rel="stylesheet", href="/stylesheets/order.css")
+block javascripts
+  script.
+    var module='#{module}',orderNo='#{orderNo}',maxNum = '#{maxNum}'
+  script(type='text/javascript', src='/javascripts/validate/jquery.validate.min.js')
+  script(type='text/javascript', src='/javascripts/validate/messages_zh.min.js')
+  script(type='text/javascript', src='/javascripts/validate/additional-methods.js')
+  script(type='text/javascript', src='/javascripts/pageItem.js')
+  script(type='text/javascript', src='/javascripts/member/refund.js')
+block content
+  form#form
+    input(type="hidden" name='orderNo' value=orderNo)
+    input(type="hidden" name='refundNum' value=maxNum)
+    //- ul.order-list.myorder-list.refund-list
+      li
+        label.lab-title(for='') 退款原因
+        .order-item
+          input.order-text(type='text', name='reason', value='', placeholder='请说明您需要退款的原因')
+      li
+        label.lab-title(for='') 退款金额
+        .order-item
+          span.price
+            em ￥
+            | 2180.0
+          span.refund-price
+            | 最多可退
+            em ￥
+            | 2180.0
+      li
+        label.lab-title(for='') 退款方式
+        .order-item
+          input.order-text(type='tel', name='idCard', value='', placeholder='请输入您的支付宝或者银行卡帐号，方便我们\
+          为您即时退款')
+    //- .page-line
+    ul.order-list.myorder-list
+      //li
+        label.lab-title(for="") 退订份数
+        .order-item
+          span.fr
+            input.refundNum(name='refundNum',type="tel", value="1")
+      li
+        label.lab-title(for='') 备注
+        .order-item
+          textarea.order-txtarea(placeholder='请输入退款原因', name='reason')
+    .btn-handle
+      a.btn(href='javascript:;') 提交申请
+  .mask#mask
+  .tips
+    p
+    a(href="javascript:;").queding 确定

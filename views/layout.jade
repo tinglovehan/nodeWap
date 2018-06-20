@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+    meta(content='yes', name='apple-mobile-web-app-capable')
+    meta(content='black', name='apple-mobile-web-app-status-bar-style')
+    meta(content='telephone=no', name='format-detection')
+    meta(content='email=no', name='format-detection')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    //- link(rel='stylesheet', href='/stylesheets/share.css')
+    link(rel='stylesheet', href='/stylesheets/common.css')
+    block stylesheets
+    script(type='text/javascript', src="/javascripts/jquery-1.8.3.min.js")
+    //- script(type='text/javascript', src="/javascripts/share.js")
+    script(type='text/javascript', src="/javascripts/touch-0.2.14.min.js")
+    //script(type='text/javascript', src="/javascripts/baidu-statistics.js")
+    script(type='text/javascript', src="/javascripts/public.js")
+    block javascripts
+  body
+    block content
