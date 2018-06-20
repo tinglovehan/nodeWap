@@ -1,0 +1,906 @@
+{
+  "apps":[
+	{
+    "name": "alsmWap",
+    "cwd": "/usr/apps/node/alsmWap3638",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },
+  {
+    "name": "bxywap",
+    "cwd": "/usr/apps/node/bxywap4044",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },
+  {
+    "name": "dlhcpc",
+    "cwd": "/usr/apps/node/dlhcpc3566",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "dlhcwap",
+    "cwd": "/usr/apps/node/dlhcwap3570",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "dmqpc",
+    "cwd": "/usr/apps/node/dmqpc3100",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "dmqwap",
+    "cwd": "/usr/apps/node/dmqwap3000",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "ds",
+    "cwd": "/usr/apps/node/ds4001",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "fjspc",
+    "cwd": "/usr/apps/node/fjspc3839",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "fjswap",
+    "cwd": "/usr/apps/node/fjswap3838",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "gsykyWap",
+    "cwd": "/usr/apps/node/gsykyWap4888",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "hqcpc",
+    "cwd": "/usr/apps/node/hqcpc3555",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "hqcwap",
+    "cwd": "/usr/apps/node/hqcwap4005",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "jinhaihu",
+    "cwd": "/usr/apps/node/jinhaihu3007",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "laibafxs",
+    "cwd": "/usr/apps/node/laibafxs4004",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "laibapc",
+    "cwd": "/usr/apps/node/laibapc3200",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "laibawap",
+    "cwd": "/usr/apps/node/laibawap3031",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "lspc",
+    "cwd": "/usr/apps/node/lspc3018",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "nishanPc",
+    "cwd": "/usr/apps/node/nishanPc3557",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "nishanWap",
+    "cwd": "/usr/apps/node/nishanWap4011",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "tiantangzhai",
+    "cwd": "/usr/apps/node/tiantangzhai3300",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "wudangs",
+    "cwd": "/usr/apps/node/wudangs3580",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "xxwap",
+    "cwd": "/usr/apps/node/xxwap4006",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "ydswap",
+    "cwd": "/usr/apps/node/ydswap4000",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "yypc",
+    "cwd": "/usr/apps/node/yypc3556",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "zybB2c",
+    "cwd": "/usr/apps/node/zybB2c3010",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "zyzlpc",
+    "cwd": "/usr/apps/node/zyzlpc3009",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+    "name": "zyzlwap",
+    "cwd": "/usr/apps/node/zyzlwap3012",
+    "max_memory_restart": "300M",
+    "script": "./bin/www",
+    "min_uptime":"60s",
+    "max_restarts": 30,
+    "exec_mode" : "cluster_mode",
+    "instances"  : 2,
+    "watch": [  // 监控变化的目录，一旦变化，自动重启
+      "bin",
+      "routers",
+      "common_modules"
+    ],
+    "ignore_watch" : [  // 从监控目录中排除
+      "node_modules",
+      "logs",
+      "public"
+    ],
+    "watch_options": {
+      "followSymlinks": false,
+      "usePolling": true
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm:ss",
+    "error_file" : "./logs/app-err.log",  // 错误日志路径
+    "out_file"   : "./logs/app-out.log",  // 普通日志路径
+    "env": {
+      "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+    }
+  },{
+      "name": "hspc",
+      "cwd": "/usr/apps/node/hspc3666",
+      "max_memory_restart": "300M",
+      "script": "./bin/www",
+      "min_uptime":"60s",
+      "max_restarts": 30,
+      "exec_mode" : "cluster_mode",
+      "instances"  : 2,
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "bin",
+        "routers",
+        "common_modules"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "node_modules",
+        "logs",
+        "public"
+      ],
+      "watch_options": {
+        "followSymlinks": false,
+        "usePolling": true
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "error_file" : "./logs/app-err.log",  // 错误日志路径
+      "out_file"   : "./logs/app-out.log",  // 普通日志路径
+      "env": {
+        "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+      }
+    },{
+      "name": "standardPc",
+      "cwd": "/usr/apps/node/node-standard-pc3888",
+      "max_memory_restart": "300M",
+      "script": "./bin/www",
+      "min_uptime":"60s",
+      "max_restarts": 30,
+      "exec_mode" : "cluster_mode",
+      "instances"  : 2,
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "bin",
+        "routers",
+        "common_modules"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "node_modules",
+        "logs",
+        "public"
+      ],
+      "watch_options": {
+        "followSymlinks": false,
+        "usePolling": true
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "error_file" : "./logs/app-err.log",  // 错误日志路径
+      "out_file"   : "./logs/app-out.log",  // 普通日志路径
+      "env": {
+        "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+      }
+    },{
+      "name": "hswap",
+      "cwd": "/usr/apps/node/hswap4008",
+      "max_memory_restart": "300M",
+      "script": "./bin/www",
+      "min_uptime":"60s",
+      "max_restarts": 30,
+      "exec_mode" : "cluster_mode",
+      "instances"  : 2,
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "bin",
+        "routers",
+        "common_modules"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "node_modules",
+        "logs",
+        "public"
+      ],
+      "watch_options": {
+        "followSymlinks": false,
+        "usePolling": true
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "error_file" : "./logs/app-err.log",  // 错误日志路径
+      "out_file"   : "./logs/app-out.log",  // 普通日志路径
+      "env": {
+        "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+      }
+    },{
+      "name": "standardWap",
+      "cwd": "/usr/apps/node/node-standard-wap4007",
+      "max_memory_restart": "300M",
+      "script": "./bin/www",
+      "min_uptime":"60s",
+      "max_restarts": 30,
+      "exec_mode" : "cluster_mode",
+      "instances"  : 2,
+      "watch": [  // 监控变化的目录，一旦变化，自动重启
+        "bin",
+        "routers",
+        "common_modules"
+      ],
+      "ignore_watch" : [  // 从监控目录中排除
+        "node_modules",
+        "logs",
+        "public"
+      ],
+      "watch_options": {
+        "followSymlinks": false,
+        "usePolling": true
+      },
+      "log_date_format": "YYYY-MM-DD HH:mm:ss",
+      "error_file" : "./logs/app-err.log",  // 错误日志路径
+      "out_file"   : "./logs/app-out.log",  // 普通日志路径
+      "env": {
+        "NODE_ENV": "production"  // 环境参数，当前指定为生产环境
+      }
+    }
+]
+}
