@@ -29,10 +29,8 @@ app.use(session({
     resave: true,
     saveUninitialized: false,
     store: new RedisStore({
-         host: "sendinfo.redis.com",
-        // host: "192.168.200.50", //测试
-        //pass:"sendinfo",
-        port: 6379,
+        host: "192.168.200.50",
+        pass:"gfghfhgfh",
         ttl: 30 * 60 // 过期时间
     }),
     secret: 'sendinfo'
